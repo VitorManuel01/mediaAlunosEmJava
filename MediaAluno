@@ -23,13 +23,13 @@ public class MediaAluno {
             System.out.println("\n\n");
             System.out.println("O aluno: " + aluno1.getNome()); 
             System.out.println("\nMatricula: " + aluno1.getMatricula());
-            System.out.println("\nAPROVADO! \nSua média: " + aluno1.getMedia());
+            System.out.printf("\nAPROVADO! \nSua média: %.1f", aluno1.getMedia());
         
         }else{
             System.out.println("\n\n");
             System.out.println("O aluno: " + aluno1.getNome()); 
             System.out.println("\nMatricula: " + aluno1.getMatricula());
-            System.out.println("\n REPROVADO! \nSua média: " + aluno1.getMedia());
+            System.out.printf("\n REPROVADO! \nSua média: %.1f", aluno1.getMedia());
         }
         
     }
