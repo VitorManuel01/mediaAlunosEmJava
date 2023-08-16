@@ -9,8 +9,6 @@ public class MediaAluno {
 
     public static void main(String[] args) {        
         aluno aluno1 = new aluno();
-        DecimalFormat df = new DecimalFormat();
-        df.setMaximumFractionDigits(2);
 
         
         aluno1.inserirNome();
