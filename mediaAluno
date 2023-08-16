@@ -1,0 +1,36 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vitor Manuel
+ */
+public class MediaAluno {
+
+    public static void main(String[] args) {        
+        aluno aluno1 = new aluno();
+        DecimalFormat df = new DecimalFormat();
+        df.setMaximumFractionDigits(2);
+
+        
+        aluno1.inserirNome();
+        aluno1.inserirMatricula();
+        aluno1.inserirNotas();
+        aluno1.calcularMedia();
+        
+        
+        if(aluno1.media >= 7){
+            System.out.println("\n\n");
+            System.out.println("O aluno: " + aluno1.getNome()); 
+            System.out.println("\nMatricula: " + aluno1.getMatricula());
+            System.out.println("\nAPROVADO! \nSua média: " + aluno1.getMedia());
+        
+        }else{
+            System.out.println("\n\n");
+            System.out.println("O aluno: " + aluno1.getNome()); 
+            System.out.println("\nMatricula: " + aluno1.getMatricula());
+            System.out.println("\n REPROVADO! \nSua média: " + aluno1.getMedia());
+        }
+        
+    }
+}
