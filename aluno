@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Vitor Manuel
+ */
+public class aluno {
+    Scanner alunos = new Scanner(System.in);
+    private String nome;
+    private int matricula;
+    float nota1, nota2, nota3;
+    float media;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public float getNota1() {
+        return nota1;
+    }
+
+    public void setNota1(float nota1) {
+        this.nota1 = nota1;
+    }
+
+    public float getNota2() {
+        return nota2;
+    }
+
+    public void setNota2(float nota2) {
+        this.nota2 = nota2;
+    }
+
+    public float getNota3() {
+        return nota3;
+    }
+
+    public void setNota3(float nota3) {
+        this.nota3 = nota3;
+    }
+
+    public float getMedia() {
+        return media;
+    }
+
+    public void setMedia(float media) {
+        this.media = media;
+    }
+
+    public aluno() {
+        this.nome = nome;
+        this.matricula = matricula;
+        this.nota1 = nota1;
+        this.nota2 = nota2;
+        this.nota3 = nota3;
+        this.media = media;
+    }
+    
+    public void inserirNome(){
+        System.out.println("Digite o nome do aluno: ");
+        nome = alunos.nextLine();
+    }
+    
+    public void inserirMatricula(){
+        System.out.println("Digite a matricula do aluno: ");
+        matricula = alunos.nextInt();
+    }
+   
+    public void inserirNotas(){
+        System.out.println("Digite a 1° Nota: ");
+        nota1 = alunos.nextFloat();
+        System.out.println("Digite a 2° Nota: ");
+        nota2 = alunos.nextFloat();              
+        System.out.println("Digite a 3° Nota: ");
+        nota3 = alunos.nextFloat();            
+    }
+    
+    public void calcularMedia(){
+        media = (nota1 + nota2 + nota3)/3;
+    }
+}
